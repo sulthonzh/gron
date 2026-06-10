@@ -1,0 +1,10 @@
+{
+  "name": "gron",
+  "version": "1.0.0",
+  "description": "Flatten JSON for easy grepping — and unflatten it back",
+  "main": "index.js",
+  "bin": { "gron": "cli.js" },
+  "scripts": { "test": "node --test test/index.test.mjs" },
+  "keywords": ["json", "flatten", "grep", "gron", "cli"],
+  "license": "MIT"
+}
