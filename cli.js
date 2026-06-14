@@ -2,7 +2,6 @@
 'use strict';
 
 const fs = require('fs');
-const path = require('path');
 const { gron, ungron, grepGron } = require('./index');
 
 function parseArgs(argv) {
@@ -54,7 +53,6 @@ function main() {
   const input = args._[0];
 
   if (args.unflatten) {
-    // Read gron text from stdin or file
     let text;
     if (input && input !== '-') {
       text = fs.readFileSync(input, 'utf8');
@@ -66,7 +64,6 @@ function main() {
     return;
   }
 
-  // Read JSON
   let jsonText;
   if (input && input !== '-') {
     jsonText = fs.readFileSync(input, 'utf8');
