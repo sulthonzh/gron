@@ -66,7 +66,6 @@ function gron(val, prefix = 'json') {
 function ungron(text) {
   const lines = text.split('\n').filter(l => l.trim() && !l.trim().startsWith('//'));
 
-  // Collect all leaf assignments
   const assignments = [];
   for (const line of lines) {
     const match = line.match(/^(\S+(?:\.\w+|\[\d+\]|\["[^"]*"\])*)\s*=\s*(.+);?\s*$/);
@@ -85,7 +84,6 @@ function ungron(text) {
     assignments.push({ path, value });
   }
 
-  // Build the object from paths
   const root = {};
   for (const { path, value } of assignments) {
     setPath(root, path, value);
