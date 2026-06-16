@@ -1,5 +1,5 @@
 {
-  "name": "gron",
+  "name": "@quadbyte/gron",
   "version": "1.0.0",
   "description": "Flatten JSON for easy grepping — and unflatten it back",
   "main": "index.js",
@@ -17,6 +17,9 @@
     "cli"
   ],
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "files": [
     "index.js",
     "src/",
