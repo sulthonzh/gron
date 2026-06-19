@@ -20,9 +20,21 @@
   "publishConfig": {
     "access": "public"
   },
+  "homepage": "https://github.com/sulthonzh/gron#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sulthonzh/gron.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sulthonzh/gron/issues"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "author": "sulthonzh",
   "files": [
     "index.js",
-    "src/",
+    "cli.js",
     "README.md",
     "LICENSE"
   ]
