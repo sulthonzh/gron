@@ -7,7 +7,8 @@
     "gron": "cli.js"
   },
   "scripts": {
-    "test": "node --test test/index.test.mjs"
+    "test": "node --test test/index.test.mjs",
+    "prepublishOnly": "npm test"
   },
   "keywords": [
     "json",
@@ -37,5 +38,8 @@
     "cli.js",
     "README.md",
     "LICENSE"
-  ]
+  ],
+  "devDependencies": {
+    "@changesets/cli": "^2.31.0"
+  }
 }
